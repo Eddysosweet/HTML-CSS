@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make
+            a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            containing
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+            versions
+            of Lorem Ipsum.
+        </p>
+
+    </div>
+    <div id="image"></div>
+    <img src="mcd.jpg" alt="#">
+    <span>nội dung 2</span>
+    <div class="bacgroundcolor">đây là divv</div>
+    <div class="boxcha">
+        <div class="boxx">box 1</div>
+        <div class="boxx">box 2</div>
+        <div class="boxx"> box 3</div>
+        <div class="boxx">box 4</div>
+    </div>
+    <style>
+        /* :root{
+            font-size: 30px;
+        } */
+        div {
+            font-size: 20px;
+        }
+
+        p {
+            color: rgb(197, 25, 25);
+            font-size: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            word-spacing: 10px;
+            line-height: 40px;
+            text-decoration: underline;
+            text-align: justify;
+        }
+
+        /* #image{
+            background-image: url(mcd.jpg);
+            width: 1000px;
+            height: 900px;
+            background-position: 50% 50% ;
+            background-repeat: no-repeat;
+            background-color: aqua;
+        } */
+        /* .bacgroundcolor{
+            width: 100%;
+            height: 200px;
+            background-color: cadetblue;
+        } */
+        #image {
+            width: 500px;
+            height: 400px;
+            background: url(mcd.jpg) no-repeat;
+            background-size: cover;
+            border: 2px dotted red;
+            padding: 20px;
+            margin: 30px;
+            background-origin: content-box;
+        }
+
+        /* .boxx {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            margin: 10px;
+            float: right;
+            clear: both;
+        }
+        .boxcha{
+            margin-right: 100px;
+        }
+         */
+        .boxx{
+            display: inline;
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            margin: 10px;
+            padding: 20px;
+        }
+        span{
+            background-color: aqua;
+            display: block;
+        }
+    </style>
+</body>
+
+</html>

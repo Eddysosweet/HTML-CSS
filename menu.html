@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Tin Tức</li>
+            <li><a href="">Hồ Sơ</a>
+                <ul class="hoso-menu">
+                    <li><a href="#">Hồ sơ cá nhân</a>
+                        <ul class="hoso-menu1">
+                            <li><a href="#">Hồ sơ cá nhân 1</a></li>
+                            <li><a href="#">Danh ba nhân viên 1 </a></li>
+                            <li><a href="#">Chấm công 1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Danh ba nhân viên</a></li>
+                    <li><a href="#">Chấm công </a></li>
+                    <li><a href="#">Task</a></li>
+                    <li><a href="#">Tài sản</a></li>
+                    <li><a href="#">Chế độ phúc lơi</a></li>
+                    <li><a href="#">Khoá học đào tạo</a></li>
+                    <li><a href="#">Yêu cầu giảng dạy</a></li>
+                </ul>
+            </li>
+            <li>Dự Án</li>
+            <li>Resources</li>
+            <li>Admin</li>
+            <li>Tài Liệu</li>
+
+        </ul>
+
+    </nav>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: source sans pro, helvetica neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        nav {
+            position: relative;
+        }
+
+        nav>ul {
+
+            margin-left: 20px;
+            margin-top: 20px;
+            padding: 10px;
+            list-style-type: none;
+            border: 1px solid red;
+            background-color: red;
+
+        }
+
+        nav>ul>li {
+            padding: 10px;
+            display: inline;
+            margin: 10px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        li>a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li:hover>ul.hoso-menu {
+            display: block;
+        }
+        nav ul li ul li:hover>ul.hoso-menu1{
+            display: block;
+        }
+
+       
+        ul>li:hover {
+            background-color: #cf2626;
+        }
+
+
+
+        .hoso-menu {
+            position: absolute;
+            display: none;
+            padding: 0;
+            top: 37px;
+            left: 136px;
+            background-color: red;
+
+        }
+        .hoso-menu1 {
+            position: absolute;
+            display: none;
+            padding: 0;
+            top: 0px;
+            left: 144px;
+            width: 160px;
+           
+            background-color: red;
+            
+        }
+
+        .hoso-menu>li,.hoso-menu1>li {
+            display: block;
+            padding: 10px;
+            border: 1px solid rgb(199, 15, 15);
+        }
+    </style>
+</body>
+
+</html>
